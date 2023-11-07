@@ -1,0 +1,133 @@
+ .banner {
+      background-color: #ffffff;
+      color: #fff;
+      text-align: center;
+      padding: 0px;
+      width: 100%; 
+    }
+
+    .category-panel {
+      display: flex;
+      justify-content: space-between;
+      background-color: #79d0e0;
+      padding: 0px;
+    }
+
+    .category {
+      font-size: 18px;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+
+    .category:hover {
+      text-decoration: underline;
+    }
+
+    .search-bar {
+      float: right;
+      margin-top: 10px;
+    }
+
+    .center-content {
+      text-align: center;
+      margin: 0 auto;
+      max-width: 600px;
+    }
+
+    .center-content h1 {
+      color: #79d0e0;
+    }
+
+    .center-image img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .center-content h2 {
+      text-align: justify;
+      max-width: 800px;
+      margin: 20px auto;
+    }
+    .center-content h1, .center-content h2, .center-content ul {
+      color: #79d0e0; 
+    }
+
+    p {
+      color: #79d0e0; 
+    }
+    
+    .carousel {
+      display: flex;
+      overflow: hidden;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .carousel-item {
+      flex: 0 0 33.33%; 
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+    }
+    #miBanner {
+      width: 100%;
+      height: auto;
+    }body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+ .category{
+  color: #ffffff;
+ }
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh; 
+  margin: 0;
+}
+.full-width-banner {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.banner {
+  background-color: #fb63a3;
+  color: #fff;
+  text-align: center;
+  padding: 0px;
+  width: 100%; /* Asegura que el banner ocupe todo el ancho de la página */
+}
+.carousel-container {
+  width: 100%; /* Establece el ancho del carrusel al 100% de su contenedor */
+  background-color: #fb63a3; /* Puedes usar el mismo color de fondo que el banner inferior si lo deseas */
+}
+
+.banner {
+  background-color: #fb63a3;
+  
+ 
+color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh; 
+  margin: 0;
+}
+
+img{
+  justify-content: center;
+  align-items: center;
+  height: 50vh; 
+  margin: 50;  
+}
+.

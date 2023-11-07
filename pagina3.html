@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/stylep.css">
+  <style>
+  </style>
+</head>
+<body>
+  <header>
+     <div class="container-center">
+    <img src="assets/img/banner.png" class="img-fluid" id="miBanner">
+    <div class="category-panel">
+      <div class="category" onclick="navigateToCategory('tortas')"><b>Tortas</b></div>
+      <div class="category" onclick="navigateToCategory('tartas')"><b>Tartas</b></div>
+      <div class="category" onclick="navigateToCategory('postres')"><b>Postres</b></div>
+      <div class="category" onclick="navigateToCategory('pedidos')"><b>Pedidos</b></div>
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar">
+        <button class="btn btn-info">Buscar</button>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="container-center center-content">
+      <h1> Tarta de frutillas</h1>
+    </div>
+    <div class="container-center center-image">
+      <img src="assets/img/TartaFrutilla.jpg">
+    </div>
+    <div class="container-center center-content">
+      <h2> Ingredientes:</h2>
+      <ul><b> Masa:</b>
+        <li>200gr. de manteca</li>
+        <li>150gr. de azúcar</li>
+        <li>400gr. de harina leudante</li>
+        <li>1 huevos</li>
+      </ul>
+       <ul><b>Relleno:</b>
+       	<li>350cc. de crema de leche</li>
+       	<li>50gr. de azúcar</li>
+       	<li>500gr. de frutillas</li>
+       	<li>1 sobre de gelatina de frutillas</li>
+       	<li> 400cc. de agua</li>
+       </ul>
+       <ul><b>Decoración:</b>
+       	<li>200cc. de crema de leche</li>
+       	<li>30gr. de azúcar</li>
+       </ul>
+      <h2>Procedimiento:</h2>
+      <p>Mezclamos la manteca a punto pomada, junto con el azúcar y el huevo hasta que se una, luego incorporamos la harina y formamos una masa.
+      Estiramos la masa de 3mm de espesor y forramos una tartera, colocamos arriba papel aluminio y material de peso. Llevamos a horno a 180 grados durante 20 min. Desmoldamos una vez fría.
+    Batimos la crema a punto chantilly junto con el azúcar, espatulamos sobre la tarta y colocamos las frutillas cortadas a la mitad hasta completar toda la tarta.
+  Preparamos la gelatina con 200cc de agua hirviendo y 200cc de agua fría, llevamos a la heladera la gelatina hasta q se enfrie, se la colocamos a la tarta una vez este en punto jarabe. Dejamos enfriar la tarta hasta q cuagule la gelatina y decoramos con unos copos de crema.</p>
+    </div>
+  </section>
+  <script> function navigateToCategory(category) {
+      if (category === 'tortas') {
+        window.location.href = 'catTortas.html';
+      } else if (category === 'tartas') {
+        window.location.href = 'catTartas.html';
+      } else if (category === 'postres') {
+        window.location.href = 'catPostres.html';
+      } else if (category === 'pedidos') {
+        window.location.href = 'pedidos.html';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      new bootstrap.Carousel(document.getElementById('imageCarousel'));
+    });</script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="..."></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/stylerp.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Carrito de Compras</title>
+  <style>
+  
+    .banner {
+      background-color: #79d0e0;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .cart-header {
+      background-color: #79d0e0;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .cart-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .cart-table th, .cart-table td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Estilos para el botón de eliminar producto */
+    .remove-button {
+      background-color: #fb63a3;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+  
+    .checkout-button {
+      background-color: #79d0e0;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+    .banner {
+      background-color: ##ffffff;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      width: 100%;
+    }
+
+    .category-panel {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff; /* Fondo blanco */
+  padding: 10px;
+}
+
+.category {
+  font-size: 18px;
+  margin-right: 20px;
+  cursor: pointer;
+  color: #79d0e0; /* Texto en color #79d0e0 */
+}
+
+.category:hover {
+  text-decoration: underline;
+}
+   
+    .search-bar {
+      float: right;
+      margin-top: 10px;
+    }
+     #miBanner {
+      width: 100%;
+      height: auto;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container-center">
+    <img src="assets/img/banner.png" class="img-fluid" id="miBanner">
+    <div class="category-panel">
+      <div class="category" onclick="navigateToCategory('tortas')"><b>Tortas</b></div>
+      <div class="category" onclick="navigateToCategory('tartas')"><b>Tartas</b></div>
+      <div class="category" onclick="navigateToCategory('postres')"><b>Postres</b></div>
+      <div class="category" onclick="navigateToCategory('pedidos')"><b>Pedidos</b></div>
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar">
+        <button class="btn btn-info">Buscar</button>
+      </div>
+    </div>
+  <div class="container">
+    <div class="banner">
+      <h1>¡Gracias por comprar con nosotros!</h1>
+    </div>
+    <div class="cart-header">
+      <h2>Carrito de Compras</h2>
+    </div>
+    <table class="cart-table">
+      <thead>
+        <tr>
+          <th>Producto</th>
+          <th>Precio</th>
+          <th>Cantidad</th>
+          <th>Subtotal</th>
+          <th>Eliminar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Aquí debes generar dinámicamente las filas de la tabla con los productos del carrito -->
+        <!-- Cada fila debe incluir: Nombre del producto, Precio, Cantidad, Subtotal y un botón para eliminar -->
+        <tr>
+          <td>Producto 1</td>
+          <td>$10.99</td>
+          <td>2</td>
+          <td>$21.98</td>
+          <td><button class="remove-button">Eliminar</button></td>
+        </tr>
+        <!-- Repite esta estructura para cada producto en el carrito -->
+      </tbody>
+    </table>
+    <button class="checkout-button">Realizar Pedido</button>
+  </div>
+  <script>
+    function navigateToCategory(category) {
+      if (category === 'tortas') {
+        // Redirige a la página de tortas
+        window.location.href = 'catTortas.html';
+      } else if (category === 'tartas') {
+        // Redirige a la página de tartas
+        window.location.href = 'catTartas.html';
+      } else if (category === 'postres') {
+        // Redirige a la página de postres
+        window.location.href = 'catPostres.html';
+      } else if (category === 'pedidos') {
+        // Redirige a la página de pedidos
+        window.location.href = 'pedidos.html';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      new bootstrap.Carousel(document.getElementById('imageCarousel'));
+    });
+  </script>
+</body>
+</html>

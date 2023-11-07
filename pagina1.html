@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="assets/css/stylep.css">
+  <style>
+  </style>
+</head>
+<body>
+  <header>
+      <div class="container-center">
+    <img src="assets/img/banner.png" class="img-fluid" id="miBanner">
+    <div class="category-panel">
+      <div class="category" onclick="navigateToCategory('tortas')"><b>Tortas</b></div>
+      <div class="category" onclick="navigateToCategory('tartas')"><b>Tartas</b></div>
+      <div class="category" onclick="navigateToCategory('postres')"><b>Postres</b></div>
+      <div class="category" onclick="navigateToCategory('pedidos')"><b>Pedidos</b></div>
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar">
+        <button class="btn btn-info">Buscar</button>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div class="container-center center-content">
+      <h1> Torta de Cerveza </h1>
+    </div>
+    <div class="container-center center-image">
+      <img src="assets/img/TortaCerveza.jpg">
+    </div>
+    <div class="container-center center-content">
+      <h2> Ingredientes:</h2>
+      <ul>
+        <li>200gr. de manteca</li>
+        <li>340gr. de azúcar negra</li>
+        <li>330cc. de cerveza negra</li>
+        <li>350gr. de harina leudante</li>
+        <li>2 huevos</li>
+      </ul>
+      <h2>Procedimiento:</h2>
+      <p>En primer lugar vamos a precalentar el horno a 160 grados. Batimos la manteca junto al azúcar hasta cremar. Incorporamos los huevos de uno en uno. Una vez que todo está bien amalgamado, agregamos la cerveza batiendo a mínima velocidad. Y por último añadimos la harina en forma de lluvia. Vamos a forrar el fondo de un molde Nº 24 con papel manteca y lo rociaremos con aceite vegetal, también lo pueden enmantecar. Volcamos la preparación en el molde y llevamos al horno durante una hora aproximadamente o hasta que al pincharlo con un palillo este salga seco. Dejamos enfriar 10 minutos en el horno apagado y luego a temperatura ambiente en un lugar fresco. Desmoldamos una vez que la torta esté fría. Por otra parte ponemos a hervir la crema y cuando llegue a punto de ebullición, la volcamos sobre el chocolate picado y mezclamos hasta que la preparación quede totalmente integrada. Colocamos la torta sobre una rejilla y la bañamos con la ganache. Dejamos enfriar y decoramos a gusto con dulce de leche y maníes con chocolate. ¡Ahora sí, a disfrutar!</p>
+    </div>
+  </section>
+  <script> function navigateToCategory(category) {
+      if (category === 'tortas') {
+        window.location.href = 'catTortas.html';
+      } else if (category === 'tartas') {
+        window.location.href = 'catTartas.html';
+      } else if (category === 'postres') {
+        window.location.href = 'catPostres.html';
+      } else if (category === 'pedidos') {
+        window.location.href = 'pedidos.html';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      new bootstrap.Carousel(document.getElementById('imageCarousel'));
+    });</script>
+</body>
+</html>

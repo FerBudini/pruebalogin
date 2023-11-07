@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="..."></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/stylercat.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <title>Categoria postres</title>
+  <style>
+  
+    .banner {
+      background-color: #fb63a3;
+      color: #79d0e0;
+      text-align: center;
+      padding: 20px;
+    }
+
+   
+    .category-panel {
+      display: flex;
+      justify-content: space-between;
+      background-color: #fff;
+      color: #79d0e0;
+      padding: 10px;
+    }
+
+    .category {
+      font-size: 18px;
+      margin-right: 20px;
+      cursor: pointer;
+    }
+
+    .category:hover {
+      text-decoration: underline;
+    }
+
+    
+    .search-bar {
+      float: right;
+      margin-top: 10px;
+    }
+
+    .carousel {
+      display: flex;
+      overflow: hidden;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .carousel-item {
+      flex: 0 0 33.33%; 
+    }
+
+    .carousel-item img {
+      width: 100%;
+      height: auto;
+    }
+    #miBanner {
+      width: 100%;
+      height: auto;
+    }
+ 
+    .product-list {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .product {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px;
+      margin: 10px;
+      width: calc(33.33% - 20px);
+    }
+
+    .product img {
+      width: 100%;
+      height: auto;
+    }
+
+  </style>
+</head>
+<body>
+   <div class="container-center">
+    <img src="assets/img/banner.png" class="img-fluid" id="miBanner">
+    <div class="category-panel">
+      <div class="category" onclick="navigateToCategory('tortas')"><b>Tortas</b></div>
+      <div class="category" onclick="navigateToCategory('tartas')"><b>Tartas</b></div>
+      <div class="category" onclick="navigateToCategory('postres')"><b>Postres</b></div>
+      <div class="category" onclick="navigateToCategory('pedidos')"><b>Pedidos</b></div>
+      <div class="search-bar">
+        <input type="text" placeholder="Buscar">
+        <button class="btn btn-info">Buscar</button>
+      </div>
+    </div>
+      <div class="product-list">
+        <div class="product">
+          <img src="assets/img/Tiramisu.jpg" alt="Tiramisu">
+          <h3>Tiramisú</h3>
+          <button id="verRecetaTiramisu" class="btn btn-info">Ver Receta</button>
+        </div>
+        <div class="product">
+          <img src="assets/img/Chocotorta.jpg" alt="Chocotorta">
+          <h3>Chocotorta</h3>
+          <button id="verRecetaChocotorta" class="btn btn-info">Ver Receta</button>
+        </div>
+      </div>
+    </div>
+     <script>
+    function navigateToCategory(category) {
+      if (category === 'tortas') {
+        window.location.href = 'catTortas.html';
+      } else if (category === 'tartas') {
+        window.location.href = 'catTartas.html';
+      } else if (category === 'postres') {
+        window.location.href = 'catPostres.html';
+      } else if (category === 'pedidos') {
+        window.location.href = 'pedidos.html';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      new bootstrap.Carousel(document.getElementById('imageCarousel'));
+    });
+      
+  const verRecetaTiramisu = document.getElementById('verRecetaTiramisu');
+
+  
+  verRecetaTiramisu.addEventListener('click', function() {
+    
+    window.location.href = 'file:///C:/Users/user/Desktop/test2/frontend/pagina2.html'; 
+  });
+  
+  const verRecetaChocotorta = document.getElementById('verRecetaChocotorta');
+
+  
+  verRecetaChocotorta.addEventListener('click', function() {
+    
+    window.location.href = 'file:///C:/Users/user/Desktop/test2/frontend/pagina5.html'; 
+  });
+  </script>
+</body>
+</html>
