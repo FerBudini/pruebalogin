@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #fc62a2;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,10 +10,10 @@ body {
 
 .container {
   background-color: #ffffff;
-  padding: 20px;
+  padding: 0px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 600px; 
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0);
+  width: 300px; 
 }
 
 form {
@@ -41,4 +41,10 @@ h1{
   align-items: center;
   height: 5vh; 
   margin: 0;
+  }
+ miBanner{
+    margin-top: 0px;
+    margin-bottom: 100px;
+    margin-left: 0px;
+    margin-right: 0px;
   }
